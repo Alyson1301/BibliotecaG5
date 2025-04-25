@@ -23,8 +23,8 @@ namespace ApiProyectoFinal.Controllers
         public async Task<ActionResult<IEnumerable<PrestamoG5>>> GetPrestamos()
         {
             return await _context.FIDE_PRESTAMOSG5
-                .Include(p => p.Usuario) // Incluir datos del usuario
-                .Include(p => p.Libro) // Incluir datos del libro
+                .Include(p => p.Usuario) 
+                .Include(p => p.Libro) 
                 .ToListAsync();
         }
 
@@ -33,8 +33,8 @@ namespace ApiProyectoFinal.Controllers
         public async Task<ActionResult<PrestamoG5>> GetPrestamo(int id)
         {
             var prestamo = await _context.FIDE_PRESTAMOSG5
-                .Include(p => p.Usuario) // Incluir datos del usuario
-                .Include(p => p.Libro) // Incluir datos del libro
+                .Include(p => p.Usuario) 
+                .Include(p => p.Libro) 
                 .FirstOrDefaultAsync(p => p.ID_Prestamo == id);
 
             if (prestamo == null)

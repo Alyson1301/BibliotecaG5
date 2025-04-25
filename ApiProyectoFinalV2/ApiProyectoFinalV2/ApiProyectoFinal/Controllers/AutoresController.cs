@@ -62,7 +62,7 @@ namespace ApiProyectoFinal.Controllers
                 return BadRequest("El ID del autor no coincide.");
             }
 
-            // Obtener el autor existente para preservar las relaciones
+            
             var autorExistente = await _context.FIDE_AUTORESG5
                 .Include(a => a.Libros)
                 .FirstOrDefaultAsync(a => a.ID_Autor == id);
@@ -72,7 +72,7 @@ namespace ApiProyectoFinal.Controllers
                 return NotFound();
             }
 
-            // Actualizar solo los campos enviados en la solicitud
+            
             autorExistente.Nombre = autor.Nombre;
             autorExistente.Nacionalidad = autor.Nacionalidad;
 

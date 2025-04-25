@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\brice\\Downloads\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\PrograAvanBiblioteca.csproj",
+      "projectUniqueName": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\PrograAvanBiblioteca.csproj",
       "projectName": "PrograAvanBiblioteca",
-      "projectPath": "C:\\Users\\brice\\Downloads\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\PrograAvanBiblioteca.csproj",
+      "projectPath": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\PrograAvanBiblioteca.csproj",
       "packagesPath": "C:\\Users\\brice\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\brice\\Downloads\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\obj\\",
+      "outputPath": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

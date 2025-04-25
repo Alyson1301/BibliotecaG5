@@ -22,14 +22,14 @@ namespace ApiProyectoFinal.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<DisponibilidadG5>>> GetDisponibilidades()
         {
-            return await _context.FIDE_DISPONIBILIDADG5.ToListAsync(); // Eliminado .Include(d => d.Libro)
+            return await _context.FIDE_DISPONIBILIDADG5.ToListAsync(); 
         }
 
         // GET: api/Disponibilidad/5
         [HttpGet("{id}")]
         public async Task<ActionResult<DisponibilidadG5>> GetDisponibilidad(int id)
         {
-            var disponibilidad = await _context.FIDE_DISPONIBILIDADG5.FindAsync(id); // Eliminado .Include(d => d.Libro)
+            var disponibilidad = await _context.FIDE_DISPONIBILIDADG5.FindAsync(id); 
 
             if (disponibilidad == null)
             {

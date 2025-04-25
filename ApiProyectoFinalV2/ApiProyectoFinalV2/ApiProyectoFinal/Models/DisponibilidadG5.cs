@@ -20,7 +20,7 @@ namespace ApiProyectoFinal.Models
         [MaxLength(50)]
         public string Estado { get; set; } = "Disponible";
 
-        // Relación con Libro
+        
         [ForeignKey("ID_Libro")]
         public virtual LibroG5 Libro { get; set; }
     }

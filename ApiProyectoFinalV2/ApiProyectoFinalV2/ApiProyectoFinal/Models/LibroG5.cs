@@ -33,15 +33,15 @@ namespace ApiProyectoFinal.Models
         [Column("Año_Publicación")]
         public int Año_Publicación { get; set; }
 
-        // Propiedad de navegación para Autor
+        
         [ForeignKey("ID_Autor")]
         public virtual AutorG5 Autor { get; set; }
 
-        // Propiedad de navegación para Categoría
+      
         [ForeignKey("ID_Categoria")]
         public virtual CategoriaG5 Categoria { get; set; }
 
-        // Campo para estado de disponibilidad (no mapeado)
+        
         [NotMapped]
         public string EstadoDisponibilidad { get; set; } = "Disponible";
     }

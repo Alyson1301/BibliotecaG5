@@ -77,10 +77,10 @@
         
         @if (rol == "Administrador")
         {
-            <!-- Botón para insertar un nuevo autor -->
+           
             <button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#insertAuthorModal">Insertar un autor</button>
         }
-        <!-- Tabla de Autores -->
+        
         <table class="table table-bordered table-striped">
             <thead style="background-color: #3498DB; color: white;">
                 <tr>
@@ -103,12 +103,12 @@
                         {
                             <td>
 
-                                <!-- Botón para editar autor -->
+                                
                                 <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editarAutorModal"
                                 onclick="llenarFormularioEditar('@autor.ID_Autor', '@autor.Nombre', '@autor.Nacionalidad')">
                                     Editar
                                 </button>
-                                <!-- Botón para eliminar autor -->
+                               
                                 <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#confirmarEliminarModal"
                                 onclick="setEliminarAutor('@autor.ID_Autor', '@autor.Nombre')">
                                     Eliminar
@@ -122,7 +122,7 @@
         </table>
     </main>
 
-    <!-- Modal para insertar un nuevo autor -->
+    
     <div class="modal fade" id="insertAuthorModal" tabindex="-1" aria-labelledby="insertAuthorModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -150,7 +150,7 @@
         </div>
     </div>
 
-    <!-- Modal para editar un autor -->
+
     <div class="modal fade" id="editarAutorModal" tabindex="-1" aria-labelledby="editarAutorModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -179,7 +179,7 @@
         </div>
     </div>
 
-    <!-- Modal para eliminar autor -->
+
     <div class="modal fade" id="confirmarEliminarModal" tabindex="-1" aria-labelledby="confirmarEliminarModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">

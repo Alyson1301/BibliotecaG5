@@ -19,11 +19,10 @@ namespace ApiProyectoFinal.Data
         public DbSet<CategoriaG5> FIDE_CATEGORIASG5 { get; set; }
         public DbSet<AutorG5> FIDE_AUTORESG5 { get; set; }
         public DbSet<LibroG5> FIDE_LIBROSG5 { get; set; }
-        public DbSet<FavoritoG5> FIDE_FAVORITOSG5 { get; set; }
+        
         public DbSet<DisponibilidadG5> FIDE_DISPONIBILIDADG5 { get; set; }
         public DbSet<PrestamoG5> FIDE_PRESTAMOSG5 { get; set; }
-        public DbSet<FeedbackG5> FIDE_FEEDBACKG5 { get; set; }
-        public DbSet<TransaccionG5> FIDE_TRANSACCIONESG5 { get; set; }
+        
         public DbSet<ListaNegraG5> FIDE_LISTA_NEGRAG5 { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -65,19 +64,7 @@ namespace ApiProyectoFinal.Data
                 entity.HasKey(u => u.ID_Usuario);
             });
 
-            // Favoritos
-            modelBuilder.Entity<FavoritoG5>(entity =>
-            {
-                entity.ToTable("FIDE_FAVORITOSG5");
-                entity.HasKey(f => f.ID_Favorito);
-
-                entity.HasOne(f => f.Usuario)
-                      .WithMany(u => u.Favoritos)
-                      .HasForeignKey(f => f.ID_Usuario)
-                      .OnDelete(DeleteBehavior.Cascade);
-
-               
-            });
+            
 
             // Disponibilidad
             modelBuilder.Entity<DisponibilidadG5>(entity =>
@@ -102,33 +89,9 @@ namespace ApiProyectoFinal.Data
                 
             });
 
-            // Feedback
-            modelBuilder.Entity<FeedbackG5>(entity =>
-            {
-                entity.ToTable("FIDE_FEEDBACKG5");
-                entity.HasKey(f => f.ID_Feedback);
+            
 
-                entity.HasOne(f => f.Usuario)
-                      .WithMany(u => u.Feedbacks)
-                      .HasForeignKey(f => f.ID_Usuario)
-                      .OnDelete(DeleteBehavior.Cascade);
-
-                
-            });
-
-            // Transacciones
-            modelBuilder.Entity<TransaccionG5>(entity =>
-            {
-                entity.ToTable("FIDE_TRANSACCIONESG5");
-                entity.HasKey(t => t.ID_Transaccion);
-
-                entity.HasOne(t => t.Usuario)
-                      .WithMany(u => u.Transacciones)
-                      .HasForeignKey(t => t.ID_Usuario)
-                      .OnDelete(DeleteBehavior.Cascade);
-
-                
-            });
+           
 
             // Lista Negra
             modelBuilder.Entity<ListaNegraG5>(entity =>

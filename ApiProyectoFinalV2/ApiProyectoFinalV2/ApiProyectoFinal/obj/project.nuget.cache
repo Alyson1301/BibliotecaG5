@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JxULbOmlUGQ=",
+  "dgSpecHash": "Wxb5cHfaIjU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\brice\\Downloads\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\ApiProyectoFinal.csproj",
+  "projectFilePath": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\ApiProyectoFinal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brice\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
     "C:\\Users\\brice\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.3.0\\microsoft.aspnetcore.authentication.core.2.3.0.nupkg.sha512",

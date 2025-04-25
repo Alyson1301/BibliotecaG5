@@ -23,7 +23,7 @@ namespace ApiProyectoFinal.Models
         [MaxLength(50)]
         public string Nacionalidad { get; set; }
 
-        // Colección de libros asociados a este autor
+       
         [JsonIgnore]
         public virtual ICollection<LibroG5> Libros { get; set; } = new List<LibroG5>();
     }

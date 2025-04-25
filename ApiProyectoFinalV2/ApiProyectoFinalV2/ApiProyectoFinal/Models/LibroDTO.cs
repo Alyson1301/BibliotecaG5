@@ -1,6 +1,6 @@
 ﻿namespace ApiProyectoFinal.Models
 {
-    // DTO para insertar un nuevo libro
+    
     public class LibroInsertDTO
     {
         public string Titulo { get; set; }
@@ -11,7 +11,7 @@
         public string EstadoDisponibilidad { get; set; } = "Disponible";
     }
 
-    // DTO para actualizar un libro existente
+   
     public class LibroUpdateDTO
     {
         public int ID_Libro { get; set; }

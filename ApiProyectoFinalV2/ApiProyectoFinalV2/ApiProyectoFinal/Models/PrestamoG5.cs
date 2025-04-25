@@ -29,6 +29,6 @@ namespace ApiProyectoFinal.Models
 
         [Required]
         [MaxLength(20)]
-        public string Estado { get; set; } // 'Prestado', 'Devuelto', 'Atrasado'
+        public string Estado { get; set; }
     }
 }

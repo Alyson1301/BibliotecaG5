@@ -19,14 +19,14 @@ namespace ApiProyectoFinal.Controllers
             _context = context;
         }
 
-        // MODELO TEMPORAL PARA LOGIN
+        
         public class LoginRequest
         {
             public string Correo { get; set; }
             public string Contraseña { get; set; }
         }
 
-        // MODELO PARA RESETEAR PASSWORD
+        
         public class ResetPasswordRequest
         {
             public string Correo { get; set; }
@@ -38,7 +38,7 @@ namespace ApiProyectoFinal.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequest request)
         {
-            // DEBUG: imprimir los datos entrantes
+           
             Console.WriteLine($"Login recibido: {request.Correo} - {request.Contraseña}");
 
             var usuario = await _context.FIDE_USUARIOSG5

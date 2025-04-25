@@ -83,7 +83,7 @@ button {
     font-weight: 600;
 }
 
-/* Animación suave al cargar */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
