@@ -1,0 +1,54 @@
+﻿@page
+@model PrograAvanBiblioteca.Pages.LoginModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="/css/Login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box animate__animated animate__fadeInDown">
+            <div class="logo-container">
+                <img src="/images/lotto.png" width="100px" height="100px" alt="Logo flor de loto" class="logo" />
+                <h1 class="titulo">Biblioteca de Aura de Sabiduría</h1>
+            </div>
+
+            <h2>Iniciar sesión</h2>
+
+            @if (!string.IsNullOrEmpty(Model.Mensaje))
+            {
+                <div class="alert alert-danger">@Model.Mensaje</div>
+            }
+
+            <form method="post">
+                <div class="input-container">
+                    <label for="Correo">Correo electrónico:</label>
+                    <input type="email" id="Correo" name="Correo" value="@Model.Correo" required />
+                </div>
+
+                <div class="input-container">
+                    <label for="Contraseña">Contraseña:</label>
+                    <input type="password" id="Contraseña" name="Contraseña" required />
+                </div>
+
+                <div class="button-container">
+                    <button type="submit" class="login-btn">Iniciar sesión</button>
+                </div>
+            </form>
+            <br>
+            <div class="create-account">
+                <a href="/crearCuenta" class="create-account-link">¿No tienes cuenta? Crear una</a>
+            </div><br />
+            <div class="create-account">
+                <a href="/reseteoClave" class="create-account-link">¿Olvidaste tu contraseña?</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

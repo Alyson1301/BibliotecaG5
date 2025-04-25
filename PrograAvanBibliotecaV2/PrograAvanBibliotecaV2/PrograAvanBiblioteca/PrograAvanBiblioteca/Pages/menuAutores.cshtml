@@ -1,0 +1,218 @@
+﻿@page
+@model PrograAvanBiblioteca.Pages.menuAutoresModel
+@{
+    ViewData["Title"] = "Autores - Biblioteca";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="/icons/autores.png">
+    <link rel="stylesheet" href="/css/menuAutores.css">
+</head>
+<body class="bg-light">
+    <header class="py-3 fixed-top" style="background-color: #2C3E50; color: white;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <a asp-page="/Index" class="me-2">
+                    <img src="/icons/icoLibro.png" alt="Logo Biblioteca" width="80" height="80">
+                </a>
+                <div>
+                    <h1 class="h5 m-0" style="color: #3498DB;">BIBLIOTECA</h1>
+                    <span style="color: #A4C9E0;">SISTEMA DE GESTIÓN</span>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" asp-page="/Index">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" asp-page="/MenuLibros">Libros</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" asp-page="/MenuAutores">Autores</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" asp-page="/Prestamos">Préstamos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" asp-page="/Perfil">Mi Perfil</a></li>
+                    @{
+                        var rol = HttpContext.Session.GetString("Rol");
+                        var nombre = HttpContext.Session.GetString("Nombre");
+                    }
+
+
+                    @if (rol == "Administrador")
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-page="/Portal">Portal</a>
+                        </li>
+                    }
+
+
+                    @if (!string.IsNullOrEmpty(nombre))
+                    {
+                        <li class="nav-item d-flex align-items-center me-3">
+                            <span class="text-white fw-semibold" style="font-size: 1rem;">👋 Hola, @nombre</span>
+                        </li>
+
+                    }
+
+                    <li class="nav-item">
+                        <a class="nav-link bg-danger text-white rounded-pill px-3" href="/Logout">X</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mt-5 pt-5">
+        <h2 class="mb-3" style="color: #333;">Autores</h2>
+
+        @if (!string.IsNullOrEmpty(Model.Mensaje))
+        {
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                @Model.Mensaje
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+        
+        @if (rol == "Administrador")
+        {
+            <!-- Botón para insertar un nuevo autor -->
+            <button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#insertAuthorModal">Insertar un autor</button>
+        }
+        <!-- Tabla de Autores -->
+        <table class="table table-bordered table-striped">
+            <thead style="background-color: #3498DB; color: white;">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Nacionalidad</th>
+                    @if (rol == "Administrador")
+                    {
+                        <th>Acciones disponibles</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var autor in Model.Autores)
+                {
+                    <tr>
+                        <td>@autor.Nombre</td>
+                        <td>@autor.Nacionalidad</td>
+                        
+                        @if (rol == "Administrador")
+                        {
+                            <td>
+
+                                <!-- Botón para editar autor -->
+                                <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editarAutorModal"
+                                onclick="llenarFormularioEditar('@autor.ID_Autor', '@autor.Nombre', '@autor.Nacionalidad')">
+                                    Editar
+                                </button>
+                                <!-- Botón para eliminar autor -->
+                                <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#confirmarEliminarModal"
+                                onclick="setEliminarAutor('@autor.ID_Autor', '@autor.Nombre')">
+                                    Eliminar
+                                </button>
+
+                            </td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Modal para insertar un nuevo autor -->
+    <div class="modal fade" id="insertAuthorModal" tabindex="-1" aria-labelledby="insertAuthorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form method="post">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="insertAuthorModalLabel">Nuevo Autor</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="Nombre" class="form-label">Nombre</label>
+                            <input type="text" id="Nombre" name="Nombre" class="form-control" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="Nacionalidad" class="form-label">Nacionalidad</label>
+                            <input type="text" id="Nacionalidad" name="Nacionalidad" class="form-control" required />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para editar un autor -->
+    <div class="modal fade" id="editarAutorModal" tabindex="-1" aria-labelledby="editarAutorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form method="post" asp-page-handler="EditarAutor">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editarAutorModalLabel">Editar Autor</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" id="ID_Autor" name="ID_Autor" />
+                        <div class="mb-3">
+                            <label for="NombreEdit" class="form-label">Nombre</label>
+                            <input type="text" id="NombreEdit" name="Nombre" class="form-control" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="NacionalidadEdit" class="form-label">Nacionalidad</label>
+                            <input type="text" id="NacionalidadEdit" name="Nacionalidad" class="form-control" required />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para eliminar autor -->
+    <div class="modal fade" id="confirmarEliminarModal" tabindex="-1" aria-labelledby="confirmarEliminarModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form method="post" asp-page-handler="EliminarAutor">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="confirmarEliminarModalLabel">Confirmar eliminación</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>¿Estás seguro de que quieres eliminar a <strong id="autorNombreEliminar"></strong>?</p>
+                        <input type="hidden" id="ID_AutorEliminar" name="id" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function llenarFormularioEditar(id, nombre, nacionalidad) {
+            document.getElementById("ID_Autor").value = id;
+            document.getElementById("NombreEdit").value = nombre;
+            document.getElementById("NacionalidadEdit").value = nacionalidad;
+        }
+
+        function setEliminarAutor(id, nombre) {
+            document.getElementById("ID_AutorEliminar").value = id;
+            document.getElementById("autorNombreEliminar").textContent = nombre;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

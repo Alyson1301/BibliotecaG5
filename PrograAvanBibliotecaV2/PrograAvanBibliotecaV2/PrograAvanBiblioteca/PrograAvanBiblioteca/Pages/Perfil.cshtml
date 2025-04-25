@@ -1,0 +1,118 @@
+﻿@page
+@model PrograAvanBiblioteca.Pages.PerfilModel
+@{
+    ViewData["Title"] = "Perfil de Usuario";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+</head>
+<body class="bg-light">
+
+    <header class="py-3 fixed-top" style="background-color: #2C3E50; color: white;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <a asp-page="/Index" class="me-2">
+                    <img src="/icons/icoLibro.png" alt="Logo Biblioteca" width="80" height="80" />
+                </a>
+                <div>
+                    <h1 class="h5 m-0" style="color: #3498DB;">BIBLIOTECA</h1>
+                    <span style="color: #A4C9E0;">SISTEMA DE GESTIÓN</span>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" asp-page="/Index">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" asp-page="/Perfil">Mi Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link bg-danger text-white rounded-pill px-3" href="/Logout">X</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mt-5 pt-5"></div>
+
+    <main class="container mt-5">
+        <section class="card shadow p-4 rounded-4 border-0">
+            <h2 class="text-center text-primary mb-4">Mi Perfil</h2>
+
+            @if (!string.IsNullOrEmpty(Model.Mensaje))
+            {
+                <div class="alert alert-info">@Model.Mensaje</div>
+            }
+
+            <form method="post">
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <label asp-for="Usuario.Nombre" class="form-label"></label>
+                        <input asp-for="Usuario.Nombre" class="form-control" readonly />
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="Usuario.Apellido" class="form-label"></label>
+                        <input asp-for="Usuario.Apellido" class="form-control" readonly />
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="Usuario.Correo" class="form-label"></label>
+                        <input asp-for="Usuario.Correo" class="form-control" readonly />
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="Usuario.Rol" class="form-label"></label>
+                        <select asp-for="Usuario.Rol" class="form-select" disabled>
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="Profesor">Profesor</option>
+                            <option value="Administrador">Administrador</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12 d-none" id="adminPass">
+                        <label for="adminPassword" class="form-label">Contraseña Administrador</label>
+                        <input type="password" name="adminPassword" id="adminPassword" class="form-control" />
+                    </div>
+                    <div class="col-md-12">
+                        <label asp-for="Usuario.Contraseña" class="form-label"></label>
+                        <input asp-for="Usuario.Contraseña" class="form-control" type="password" readonly />
+                    </div>
+                </div>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-warning me-2" id="btnEditar">Editar</button>
+                    <button type="submit" class="btn btn-success d-none" id="btnActualizar">Actualizar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        const btnEditar = document.getElementById("btnEditar");
+        const btnActualizar = document.getElementById("btnActualizar");
+        const rolSelect = document.getElementById("Usuario_Rol");
+        const adminField = document.getElementById("adminPass");
+
+        btnEditar.addEventListener("click", () => {
+            document.querySelectorAll("input.form-control").forEach(input => {
+                input.removeAttribute("readonly");
+            });
+            rolSelect.removeAttribute("disabled");
+
+            btnActualizar.classList.remove("d-none");
+            btnEditar.classList.add("d-none");
+        });
+
+        rolSelect.addEventListener("change", () => {
+            if (rolSelect.value === "Administrador") {
+                adminField.classList.remove("d-none");
+            } else {
+                adminField.classList.add("d-none");
+            }
+        });
+
+        // Mostrar campo contraseña admin si ya está seleccionado al cargar
+        if (rolSelect.value === "Administrador") {
+            adminField.classList.remove("d-none");
+        }
+    </script>
+</body>
+</html>

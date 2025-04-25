@@ -1,0 +1,384 @@
+﻿@page
+@model PrograAvanBiblioteca.Pages.menuLibrosModel
+@{
+    Layout=null;
+
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="/icons/autores.png">
+    <link rel="stylesheet" href="/css/menuLibros.css">
+</head>
+<body class="bg-light">
+<header class="py-3 fixed-top" style="background-color: #2C3E50; color: white;">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <a asp-page="/Index" class="me-2">
+                <img src="/icons/icoLibro.png" alt="Logo Biblioteca" width="80" height="80">
+            </a>
+            <div>
+                <h1 class="h5 m-0" style="color: #3498DB;">BIBLIOTECA</h1>
+                <span style="color: #A4C9E0;">SISTEMA DE GESTIÓN</span>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" asp-page="/Index">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" asp-page="/MenuLibros">Libros</a></li>
+                <li class="nav-item"><a class="nav-link text-white" asp-page="/MenuAutores">Autores</a></li>
+                <li class="nav-item"><a class="nav-link text-white" asp-page="/Prestamos">Préstamos</a></li>
+                <li class="nav-item"><a class="nav-link text-white" asp-page="/Perfil">Mi Perfil</a></li>
+                @{
+                    var rol = HttpContext.Session.GetString("Rol");
+                    var nombre = HttpContext.Session.GetString("Nombre");
+                }
+
+
+                @if (rol == "Administrador")
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-page="/Portal">Portal</a>
+                    </li>
+                }
+
+
+                @if (!string.IsNullOrEmpty(nombre))
+                {
+                    <li class="nav-item d-flex align-items-center me-3">
+                        <span class="text-white fw-semibold" style="font-size: 1rem;">👋 Hola, @nombre</span>
+                    </li>
+
+                }
+
+                <li class="nav-item">
+                    <a class="nav-link bg-danger text-white rounded-pill px-3" href="/Logout">X</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="container mt-4">
+    <h1 class="mb-4">Libros</h1>
+
+    <!-- Búsqueda por título, autor o código -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <h5>Buscar por título, autor o código</h5>
+        </div>
+        <div class="card-body">
+            <form method="get" class="row g-3">
+                <div class="col-md-8">
+                    <input type="text" name="searchTerm" class="form-control" placeholder="Ingrese texto para buscar" value="@Model.SearchTerm">
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Búsqueda por categoría -->
+    <div class="card mb-4">
+        <div class="card-header">
+            <h5>Buscar por categoría</h5>
+        </div>
+        <div class="card-body">
+            <form method="get" asp-page-handler="BuscarCategoria" class="row g-3">
+                <div class="col-md-8">
+                    <select name="categoriaId" class="form-select">
+                        <option value="">Seleccione una categoría</option>
+                        @foreach (var categoria in Model.Categorias)
+                        {
+                            <option value="@categoria.ID_Categoria">@categoria.Nombre</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Botón para insertar nuevo libro -->
+    
+    @if (rol == "Administrador")
+    {
+        <div class="mb-4">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#nuevoLibroModal">
+            Insertar un libro
+        </button>
+        </div>
+    }
+    <!-- Mensaje de resultado -->
+    @if (!string.IsNullOrEmpty(Model.Mensaje))
+    {
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+            @Model.Mensaje
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <!-- Tabla de libros -->
+    @if (Model.Libros != null && Model.Libros.Any())
+    {
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Categoría</th>
+                        <th>Disponibilidad</th>
+                        
+                        @if (rol == "Administrador")
+                        {
+                            <th>Acciones</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var libro in Model.Libros)
+                    {
+                        var nombreAutor = Model.Autores.FirstOrDefault(a => a.ID_Autor == libro.ID_Autor)?.Nombre ?? "Desconocido";
+                        var nombreCategoria = Model.Categorias.FirstOrDefault(c => c.ID_Categoria == libro.ID_Categoria)?.Nombre ?? "Sin categoría";
+
+                        <tr>
+                            <td>@libro.ID_Libro</td>
+                            <td>@libro.Titulo</td>
+                            <td>@nombreAutor</td>
+                            <td>@nombreCategoria</td>
+                            <td>@libro.EstadoDisponibilidad</td>
+                            
+                            @if (rol == "Administrador")
+                            {
+                                
+                            
+                            <td>
+
+                                <button type="button" class="btn btn-sm btn-primary"
+                                        data-bs-toggle="modal" data-bs-target="#editarLibroModal"
+                                        data-id="@libro.ID_Libro"
+                                        data-titulo="@libro.Titulo"
+                                        data-autor="@libro.ID_Autor"
+                                        data-categoria="@libro.ID_Categoria"
+                                        data-isbn="@libro.ISBN"
+                                        data-ano="@libro.Año_Publicación"
+                                        data-disponibilidad="@libro.EstadoDisponibilidad">
+                                    Editar
+                                </button>
+                                <button type="button" class="btn btn-sm btn-danger"
+                                        data-bs-toggle="modal" data-bs-target="#eliminarLibroModal"
+                                        data-id="@libro.ID_Libro"
+                                        data-titulo="@libro.Titulo">
+                                    Eliminar
+                                </button>
+                            </td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info">
+            No hay libros registrados en el sistema.
+        </div>
+    }
+</div>
+
+<!-- Modal para Nuevo Libro -->
+<div class="modal fade" id="nuevoLibroModal" tabindex="-1" aria-labelledby="nuevoLibroModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form method="post" asp-page-handler="InsertarLibro">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="nuevoLibroModalLabel">Nuevo Libro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="titulo" class="form-label">Título *</label>
+                        <input type="text" class="form-control" id="titulo" name="Titulo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="idAutor" class="form-label">Autor *</label>
+                        <select class="form-select" id="idAutor" name="ID_Autor" required>
+                            <option value="">Seleccione un autor</option>
+                            @foreach (var autor in Model.Autores)
+                            {
+                                <option value="@autor.ID_Autor">@autor.Nombre (@autor.Nacionalidad)</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="idCategoria" class="form-label">Categoría</label>
+                        <select class="form-select" id="idCategoria" name="ID_Categoria">
+                            <option value="">Seleccione una categoría (opcional)</option>
+                            @foreach (var categoria in Model.Categorias)
+                            {
+                                <option value="@categoria.ID_Categoria">@categoria.Nombre</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="isbn" class="form-label">ISBN *</label>
+                        <input type="text" class="form-control" id="isbn" name="ISBN" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="anoPublicacion" class="form-label">Año de Publicación *</label>
+                        <input type="number" class="form-control" id="anoPublicacion" name="Año_Publicación" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="estadoDisponibilidad" class="form-label">Disponibilidad *</label>
+                        <select class="form-select" id="estadoDisponibilidad" name="EstadoDisponibilidad" required>
+                            <option value="Disponible">Disponible</option>
+                            <option value="Prestado">Prestado</option>
+                            <option value="Reservado">Reservado</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para Editar Libro -->
+<div class="modal fade" id="editarLibroModal" tabindex="-1" aria-labelledby="editarLibroModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form method="post" asp-page-handler="EditarLibro">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editarLibroModalLabel">Editar Libro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="editId" name="ID_Libro">
+                    <div class="mb-3">
+                        <label for="editTitulo" class="form-label">Título</label>
+                        <input type="text" class="form-control" id="editTitulo" name="Titulo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editIdAutor" class="form-label">Autor</label>
+                        <select class="form-select" id="editIdAutor" name="ID_Autor" required>
+                            @foreach (var autor in Model.Autores)
+                            {
+                                <option value="@autor.ID_Autor">@autor.Nombre</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editIdCategoria" class="form-label">Categoría</label>
+                        <select class="form-select" id="editIdCategoria" name="ID_Categoria">
+                            <option value="">Sin categoría</option>
+                            @foreach (var categoria in Model.Categorias)
+                            {
+                                <option value="@categoria.ID_Categoria">@categoria.Nombre</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editIsbn" class="form-label">ISBN</label>
+                        <input type="text" class="form-control" id="editIsbn" name="ISBN" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editAnoPublicacion" class="form-label">Año de Publicación</label>
+                        <input type="number" class="form-control" id="editAnoPublicacion" name="Año_Publicación" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editEstadoDisponibilidad" class="form-label">Disponibilidad</label>
+                        <select class="form-select" id="editEstadoDisponibilidad" name="EstadoDisponibilidad" required>
+                            <option value="Disponible">Disponible</option>
+                            <option value="Prestado">Prestado</option>
+                            <option value="Reservado">Reservado</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para Confirmar Eliminación -->
+<div class="modal fade" id="eliminarLibroModal" tabindex="-1" aria-labelledby="eliminarLibroModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form method="post" asp-page-handler="EliminarLibro">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="eliminarLibroModalLabel">Confirmar Eliminación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="deleteId" name="ID_Libro">
+                    <p>¿Estás seguro de que deseas eliminar el libro <span id="deleteTitulo"></span>?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Script para cargar datos en el modal de edición
+        document.addEventListener('DOMContentLoaded', function () {
+            var editarLibroModal = document.getElementById('editarLibroModal');
+            if (editarLibroModal) {
+                editarLibroModal.addEventListener('show.bs.modal', function (event) {
+                    var button = event.relatedTarget;
+                    var id = button.getAttribute('data-id');
+                    var titulo = button.getAttribute('data-titulo');
+                    var autor = button.getAttribute('data-autor');
+                    var categoria = button.getAttribute('data-categoria');
+                    var isbn = button.getAttribute('data-isbn');
+                    var ano = button.getAttribute('data-ano');
+                    var disponibilidad = button.getAttribute('data-disponibilidad');
+
+                    var modal = this;
+                    modal.querySelector('#editId').value = id;
+                    modal.querySelector('#editTitulo').value = titulo;
+                    modal.querySelector('#editIdAutor').value = autor;
+                    modal.querySelector('#editIdCategoria').value = categoria || '';
+                    modal.querySelector('#editIsbn').value = isbn;
+                    modal.querySelector('#editAnoPublicacion').value = ano;
+                    modal.querySelector('#editEstadoDisponibilidad').value = disponibilidad;
+                });
+            }
+
+            var eliminarLibroModal = document.getElementById('eliminarLibroModal');
+            if (eliminarLibroModal) {
+                eliminarLibroModal.addEventListener('show.bs.modal', function (event) {
+                    var button = event.relatedTarget;
+                    var id = button.getAttribute('data-id');
+                    var titulo = button.getAttribute('data-titulo');
+
+                    var modal = this;
+                    modal.querySelector('#deleteId').value = id;
+                    modal.querySelector('#deleteTitulo').textContent = titulo;
+                });
+            }
+        });
+    </script>
+}</body>
+</html>

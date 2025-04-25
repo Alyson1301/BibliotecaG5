@@ -1,0 +1,61 @@
+﻿@page
+@model PrograAvanBiblioteca.Pages.NuevaClaveModel
+
+@{
+    Layout = null;
+    ViewData["Title"] = "Nueva Contraseña";
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="/css/crearCuenta.css" />
+    <script>
+        function validarFormulario() {
+            const password = document.getElementById('NuevaClave').value;
+
+            if (!password) {
+                alert('Por favor ingresa una nueva contraseña');
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Establecer nueva contraseña</h2>
+
+        <form method="post" onsubmit="return validarFormulario()">
+            <input type="hidden" name="Correo" value="@Model.Correo" />
+            <input type="hidden" name="Token" value="@Model.Token" />
+
+            <div class="input-container">
+                <label for="NuevaClave">Nueva Contraseña:</label>
+                <input type="password" id="NuevaClave" name="NuevaClave" required />
+            </div>
+
+            <div class="input-container">
+                <button type="submit">Actualizar Contraseña</button>
+            </div>
+
+            @if (!string.IsNullOrEmpty(Model.Mensaje))
+            {
+                <p class="mensaje" style="color:@(Model.Exito ? "green" : "red")">@Model.Mensaje</p>
+            }
+        </form>
+
+        @if (string.IsNullOrEmpty(Model.Correo) || string.IsNullOrEmpty(Model.Token))
+        {
+            <div class="alert alert-warning mt-3" style="margin-top: 20px; padding: 10px; border: 1px solid #ff9800; background-color: #fff3cd; color: #856404; border-radius: 4px;">
+                <p>El enlace de recuperación está incompleto. Por favor revisa tu correo y utiliza el enlace completo proporcionado.</p>
+                <p><strong>Parámetros detectados:</strong> Correo: @(string.IsNullOrEmpty(Model.Correo) ? "falta" : "presente"), Token: @(string.IsNullOrEmpty(Model.Token) ? "falta" : "presente")</p>
+                <p><strong>URL actual:</strong> <code>@HttpContext.Request.Path@HttpContext.Request.QueryString</code></p>
+            </div>
+        }
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+﻿@page
+@model PrograAvanBiblioteca.Pages.IndexModel
+
+@{
+    ViewData["Title"] = "Home page";
+
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Usuario - Biblioteca</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="/icons/icoLibro.png">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body class="bg-light">
+    <header class="py-3 fixed-top" style="background-color: #2C3E50; color: white;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <a asp-page="/Index" class="me-2">
+                    <img src="/icons/icoLibro.png" alt="Logo Biblioteca" width="80" height="80">
+                </a>
+                <div>
+                    <h1 class="h5 m-0" style="color: #3498DB;">BIBLIOTECA</h1>
+                    <span style="color: #A4C9E0;">SISTEMA DE GESTIÓN</span>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" asp-page="/Index">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" asp-page="/MenuLibros">Libros</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" asp-page="/MenuAutores">Autores</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" asp-page="/Prestamos">Préstamos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" asp-page="/Perfil">Mi Perfil</a></li>
+                    @{
+                        var rol = HttpContext.Session.GetString("Rol");
+                        var nombre = HttpContext.Session.GetString("Nombre");
+                    }
+
+
+                    @if (rol == "Administrador")
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-page="/Portal">Portal</a>
+                        </li>
+                    }
+                    
+
+                    @if (!string.IsNullOrEmpty(nombre))
+                    {
+                        <li class="nav-item d-flex align-items-center me-3">
+                            <span class="text-white fw-semibold" style="font-size: 1rem;">👋 Hola, @nombre</span>
+                        </li>
+
+                    }
+
+                    <li class="nav-item">
+                        <a class="nav-link bg-danger text-white rounded-pill px-3" href="/Logout">X</a>
+                    </li>
+                   
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <br>
+    <br>
+    <br>
+    <section class="mb-5">
+        <h2 class="mb-3" style="color: #333;">Historia de la Biblioteca</h2><br>
+        <p>
+            La Biblioteca "Aurora de Sabiduría" fue fundada en 1950 por el Dr. Juan Ramírez, un apasionado de los libros y la educación. Desde su apertura, ha sido un lugar
+            de encuentro para lectores de todas las edades, promoviendo el conocimiento y la creatividad. En sus primeros años, la biblioteca comenzó con una pequeña colección de
+            libros donados, pero rápidamente ganó popularidad gracias a la dedicación de su fundador y su compromiso con la educación.
+        </p>
+        <p>
+            A lo largo de las décadas, la biblioteca
+            ha crecido considerablemente, tanto en espacio como en servicios. En la década de 1980, con la incorporación de tecnologías digitales, la "Aurora de Sabiduría" se
+            convirtió en un referente en la ciudad, ofreciendo acceso a bases de datos y recursos en línea. Además, ha sido un centro cultural que organiza eventos literarios,
+            exposiciones de arte y talleres educativos para fomentar el amor por la lectura y la escritura.
+        </p>
+        <p>
+            Hoy, con más de 50,000 libros en su colección, la biblioteca
+            sigue siendo un pilar fundamental en la comunidad, ofreciendo no solo un espacio de lectura, sino también un lugar donde las personas pueden participar en actividades
+            culturales y educativas. La "Aurora de Sabiduría" continúa cumpliendo la misión de su fundador: ser un espacio accesible y enriquecedor para todos.
+        </p>
+    </section>
+    <main class="container mt-5 pt-5">
+
+        <section class="mb-4">
+            <div id="libraryCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/images/salon1.jpeg" class="d-block w-100" alt="Biblioteca 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/salon2.png" class="d-block w-100" alt="Biblioteca 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/salon3.jpeg" class="d-block w-100" alt="Biblioteca 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#libraryCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#libraryCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+
+
+        <section class="mb-5">
+            <h2 class="mb-3" style="color: #333;">Fundador de la Biblioteca</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="/images/owner.png" class="img-fluid" alt="Fundador de la Biblioteca">
+                </div>
+                <div class="col-md-8">
+                    <p style="color: #555;">
+                        El Dr. Juan Ramírez, un visionario y defensor de la educación pública, fundó la Biblioteca "Aurora de Sabiduría" con el objetivo de proporcionar a la
+                        comunidad un acceso libre y gratuito al conocimiento. Con una vasta formación académica y una profunda pasión por los libros, su legado continúa vivo hoy en día.
+                        La biblioteca nació en 1950 en un pequeño local de la ciudad, donde el Dr. Ramírez, convencido de que la educación es un derecho fundamental, comenzó a recopilar libros
+                        donados por amigos, colegas y ciudadanos generosos. Su idea era clara: crear un espacio donde las personas pudieran aprender, soñar y desarrollar su potencial, sin barreras
+                        económicas que los impidieran acceder a los recursos educativos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <h2 class="mb-3" style="color: #333;">Noticias y Eventos</h2>
+            <div class="list-group">
+                <a href="https://www.filcr.com/" class="list-group-item list-group-item-action">
+                    <h5 class="mb-1" style="color: #3498DB;">Feria del Libro 2025</h5>
+                    <p class="mb-1" style="color: #555;">Ven y descubre los libros más esperados del año en nuestra Feria del Libro, donde tendremos a autores locales e internacionales.</p>
+                    <small>Publicado el 1 de abril, 2025</small>
+                </a>
+                <a href="https://www.mep.go.cr/noticias/mi-cuento-fantastico-vuelve-colocar-ninos-ninas-como-personas-autoras-sus-propias" class="list-group-item list-group-item-action">
+                    <h5 class="mb-1" style="color: #3498DB;">Concurso de Lectura para Niños</h5>
+                    <p class="mb-1" style="color: #555;">Participa en el Concurso de Lectura para Niños y gana premios increíbles. ¡Fomenta el amor por los libros desde temprana edad!</p>
+                    <small>Publicado el 28 de marzo, 2025</small>
+                </a>
+                <a href="https://pezbanana.club/" class="list-group-item list-group-item-action">
+                    <h5 class="mb-1" style="color: #3498DB;">Club de Lectura Mensual</h5>
+                    <p class="mb-1" style="color: #555;">Únete al Club de Lectura Mensual de la Biblioteca y disfruta de discusiones enriquecedoras sobre libros clásicos y modernos.</p>
+                    <small>Publicado el 15 de marzo, 2025</small>
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

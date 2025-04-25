@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "1tdt73VDXDU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\brice\\Downloads\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\PrograAvanBiblioteca.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\brice\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

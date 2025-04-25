@@ -1,0 +1,128 @@
+﻿@page
+@model PrograAvanBiblioteca.Pages.PortalModel
+@{
+    ViewData["Title"] = "Portal de Administración";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Fausto Herrera</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="py-3 fixed-top" style="background-color: #2C3E50; color: white;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <a asp-page="/Index" class="me-2">
+                    <img src="/icons/icoLibro.png" alt="Logo Biblioteca" width="80" height="80">
+                </a>
+                <div>
+                    <h1 class="h5 m-0" style="color: #3498DB;">BIBLIOTECA</h1>
+                    <span style="color: #A4C9E0;">SISTEMA DE GESTIÓN</span>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" asp-page="/Index">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" asp-page="/MenuLibros">Libros</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" asp-page="/Favoritos">Favoritos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" asp-page="/Autores">Autores</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" asp-page="/Prestamos">Préstamos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" asp-page="/Perfil">Mi Perfil</a></li>
+
+                    @{
+                        var rol = HttpContext.Session.GetString("Rol");
+                        var nombre = HttpContext.Session.GetString("Nombre");
+                    }
+
+                    @if (rol == "Administrador")
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-page="/Portal">Portal</a>
+                        </li>
+                    }
+
+                    @if (!string.IsNullOrEmpty(nombre))
+                    {
+                        <li class="nav-item d-flex align-items-center me-3">
+                            <span class="text-white fw-semibold" style="font-size: 1rem;">👋 Hola, @nombre</span>
+                        </li>
+                    }
+
+                    <li class="nav-item">
+                        <a class="nav-link bg-danger text-white rounded-pill px-3" href="/Logout">X</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+ 
+    <main class="container mt-5 pt-5">
+        <section>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2>Usuarios Registrados</h2>
+                <form method="get">
+                    <!-- Dropdown para filtrar por rol -->
+                    <select name="rolFiltro" class="form-select w-auto me-2">
+                        <option value="">Filtrar por rol</option>
+                        <option value="Administrador">Administrador</option>
+                        <option value="Estudiante">Estudiantes</option>
+                        <option value="Vetado">Vetado</option>
+                        <!-- Agregar más opciones si es necesario -->
+                    </select>
+                    <button type="submit" class="btn btn-primary">Filtrar</button>
+                    <button type="submit" class="btn btn-success ms-2">Refrescar Lista</button>
+                </form>
+            </div>
+
+            <table class="table table-striped table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Correo</th>
+                        <th>Rol</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.Usuarios != null && Model.Usuarios.Count > 0)
+                    {
+                        foreach (var usuario in Model.Usuarios)
+                        {
+                            <tr>
+                                <td>@usuario.ID_Usuario</td>
+                                <td>@usuario.Nombre</td>
+                                <td>@usuario.Apellido</td>
+                                <td>@usuario.Correo</td>
+                                <td>@usuario.Rol</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="5" class="text-center text-muted">No hay usuarios disponibles.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
+    <footer class="bg-light text-center text-muted py-3 mt-5">
+        <div class="container">
+            <small>&copy; 2025 Escuela Fausto Herrera Cordero</small>
+        </div>
+    </footer>
+</body>
+</html>

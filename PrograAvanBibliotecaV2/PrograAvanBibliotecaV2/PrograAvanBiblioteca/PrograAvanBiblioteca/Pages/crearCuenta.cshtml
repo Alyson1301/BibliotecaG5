@@ -1,0 +1,84 @@
+﻿@page
+@model PrograAvanBiblioteca.Pages.crearCuentaModel
+@{
+    Layout = null;
+    ViewData["Title"] = "Crear Cuenta";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="/css/crearCuenta.css" />
+</head>
+<body>
+    <div class="form-container">
+        <h2>Crear Cuenta</h2>
+
+        <form method="post">
+            <div class="input-container">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="Nombre" name="Nombre" value="@Model.Nombre" required />
+            </div>
+
+            <div class="input-container">
+                <label for="Apellido">Apellido:</label>
+                <input type="text" id="Apellido" name="Apellido" value="@Model.Apellido" required />
+            </div>
+
+            <div class="input-container">
+                <label for="Correo">Correo electrónico:</label>
+                <input type="email" id="Correo" name="Correo" value="@Model.Correo" required />
+            </div>
+
+            <div class="input-container">
+                <label for="Contraseña">Contraseña:</label>
+                <input type="password" id="Contraseña" name="Contraseña" value="@Model.Contraseña" required />
+            </div>
+
+            <div class="input-container">
+                <label for="Rol">Rol:</label>
+                <select id="Rol" name="Rol" required>
+                    <option value="">Seleccione un rol</option>
+                    <option value="Estudiante" selected="@("Estudiante" == Model.Rol)">Estudiante</option>
+                    <option value="Administrador" selected="@("Administrador" == Model.Rol)">Administrador</option>
+
+                </select>
+                <div class="input-container" id="claveAdminContainer" style="display:none;">
+                    <label for="ClaveAdmin">Clave de administrador:</label>
+                    <input type="password" id="ClaveAdmin" name="ClaveAdmin" />
+                </div>
+
+            </div>
+
+            <div class="input-container">
+                <button type="submit">Registrar</button>
+            </div>
+
+            @if (!string.IsNullOrEmpty(Model.Mensaje))
+            {
+                <p class="mensaje" style="color:@(Model.Exito ? "green" : "red")">@Model.Mensaje</p>
+            }
+        </form>
+    </div>
+    <script>
+        const rolSelect = document.getElementById('Rol');
+        const claveAdminContainer = document.getElementById('claveAdminContainer');
+
+        rolSelect.addEventListener('change', function () {
+            if (rolSelect.value === 'Administrador') {
+                claveAdminContainer.style.display = 'block';
+            } else {
+                claveAdminContainer.style.display = 'none';
+            }
+        });
+
+        // Mostrar la clave admin si ya estaba seleccionado "Administrador" al cargar
+        if (rolSelect.value === 'Administrador') {
+            claveAdminContainer.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

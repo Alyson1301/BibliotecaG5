@@ -1,0 +1,120 @@
+﻿/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #4e73df, #1d5ed5);
+}
+
+/* Login container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Login box */
+.login-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+    /* Title */
+    .login-box h2 {
+        color: #333;
+        margin-bottom: 30px;
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+/* Input container */
+.input-container {
+    margin-bottom: 20px;
+}
+
+    .input-container label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    .input-container input {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+        color: #555;
+        background-color: #f9f9f9;
+        transition: border-color 0.3s ease;
+        outline: none;
+    }
+
+        .input-container input:focus {
+            border-color: #4e73df;
+        }
+
+/* Error message */
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+}
+
+/* Submit button */
+.button-container {
+    margin-top: 20px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+    .login-btn:hover {
+        background-color: #1d5ed5;
+    }
+
+/* Create account link */
+.create-account {
+    margin-top: 15px;
+}
+
+.create-account-link {
+    color: #4e73df;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+    .create-account-link:hover {
+        color: #1d5ed5;
+    }
+
+/* Responsive design */
+@media (max-width: 500px) {
+    .login-box {
+        width: 90%;
+        height: auto;
+    }
+}
