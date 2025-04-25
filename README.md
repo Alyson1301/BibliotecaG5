@@ -1,6 +1,6 @@
 # 📚 BibliotecaG5 – *Aurora de Sabiduría*
 
-![Flor de Loto](https://drive.google.com/file/d/100PHv8PefDzsUj0a8vIHgQWqEofoq813/view?usp=sharing)
+![Flor de Loto](https://static.vecteezy.com/system/resources/previews/015/089/406/non_2x/lotus-flower-icon-cartoon-style-vector.jpg)
 
 > *"Un libro es un sueño que tienes en tus manos." – Neil Gaiman*
 
