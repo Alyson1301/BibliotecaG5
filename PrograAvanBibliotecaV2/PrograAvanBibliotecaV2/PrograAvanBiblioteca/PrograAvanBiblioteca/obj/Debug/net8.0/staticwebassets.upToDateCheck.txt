@@ -2,7 +2,6 @@ wwwroot\css\crearCuenta.css
 wwwroot\css\index.css
 wwwroot\css\Login.css
 wwwroot\css\menuAutores.css
-wwwroot\css\menuFavoritos.css
 wwwroot\css\menuLibros.css
 wwwroot\css\Perfil.css
 wwwroot\css\portal.css

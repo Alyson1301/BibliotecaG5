@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>48pypvyjej</Fingerprint>
-      <Integrity>NCmczfsHAspvV66qCxiTAvdp2UU+G23ckerAPAC6PRA=</Integrity>
+      <Fingerprint>lyxi0i400d</Fingerprint>
+      <Integrity>k7vC+CO6npS3XZICa47WYwryuDrJCKhNIJKAeDEOjTY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\crearCuenta.css'))</OriginalItemSpec>
@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qp07fzr58g</Fingerprint>
-      <Integrity>ojUw5XoPWu6h/bBMN7zm/fCGc7WwwOavpGLO4ptQkOI=</Integrity>
+      <Fingerprint>bxrm7bx2fh</Fingerprint>
+      <Integrity>IcaWo9mo4RyVwutqgNMe6xGnVCg4jZxZyXyG1ATgNPE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Login.css'))</OriginalItemSpec>
@@ -66,29 +66,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>701sxucjie</Fingerprint>
-      <Integrity>F22O8FVhmlczIbzYzeUDPzjItqFPCUyrTzjdOfCr6Fc=</Integrity>
+      <Fingerprint>bh9r2o3qex</Fingerprint>
+      <Integrity>v7onXn+QpsopX0OzNe5y0cV5ENhUeP/afw96h0N0e/0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\menuAutores.css'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\menuFavoritos.css'))">
-      <SourceType>Package</SourceType>
-      <SourceId>PrograAvanBiblioteca</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/PrograAvanBiblioteca</BasePath>
-      <RelativePath>css/menuFavoritos.css</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>dyjx89twm7</Fingerprint>
-      <Integrity>u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\menuFavoritos.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\menuLibros.css'))">
       <SourceType>Package</SourceType>

@@ -3,56 +3,80 @@
   "WorkspaceRootPath": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\data\\bibliotecacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:data\\bibliotecacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\models\\librodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:models\\librodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\models\\disponibilidadg5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:models\\disponibilidadg5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\models\\librog5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:models\\librog5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\models\\categoriag5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:models\\categoriag5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\models\\prestamog5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:models\\prestamog5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\models\\usuariog5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:models\\usuariog5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\models\\resetearpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:models\\resetearpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\models\\listanegrag5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:models\\listanegrag5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\models\\disponibilidadg5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:models\\disponibilidadg5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\models\\autorg5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:models\\autorg5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\controllers\\autorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:controllers\\autorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\controllers\\favoritoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:controllers\\favoritoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\controllers\\prestamoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:controllers\\prestamoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\models\\favoritog5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:models\\favoritog5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\data\\bibliotecacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:data\\bibliotecacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\controllers\\listanegracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:controllers\\listanegracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:controllers\\libroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\controllers\\disponibilidadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:controllers\\disponibilidadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|d:\\prograavanzada\\bibliotecag5\\apiproyectofinalv2\\apiproyectofinalv2\\apiproyectofinal\\controllers\\autorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24E290E1-41B9-49B9-90CD-5FD7B2C54D7A}|ApiProyectoFinal.csproj|solutionrelative:controllers\\autorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,160 +102,232 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LibroDTO.cs",
-              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\LibroDTO.cs",
-              "RelativeDocumentMoniker": "Models\\LibroDTO.cs",
-              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\LibroDTO.cs",
-              "RelativeToolTip": "Models\\LibroDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAcwBgAAAABAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T22:54:33.701Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AutorG5.cs",
-              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\AutorG5.cs",
-              "RelativeDocumentMoniker": "Models\\AutorG5.cs",
-              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\AutorG5.cs",
-              "RelativeToolTip": "Models\\AutorG5.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T04:06:57.119Z"
+              "WhenOpened": "2025-04-25T03:26:27.451Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CategoriaG5.cs",
-              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\CategoriaG5.cs",
-              "RelativeDocumentMoniker": "Models\\CategoriaG5.cs",
-              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\CategoriaG5.cs",
-              "RelativeToolTip": "Models\\CategoriaG5.cs",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T02:47:33.705Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-25T03:26:23.558Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BibliotecaContext.cs",
-              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Data\\BibliotecaContext.cs",
-              "RelativeDocumentMoniker": "Data\\BibliotecaContext.cs",
-              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Data\\BibliotecaContext.cs",
-              "RelativeToolTip": "Data\\BibliotecaContext.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAqwCsAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UsuarioG5.cs",
+              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\UsuarioG5.cs",
+              "RelativeDocumentMoniker": "Models\\UsuarioG5.cs",
+              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\UsuarioG5.cs",
+              "RelativeToolTip": "Models\\UsuarioG5.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T23:15:51.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T03:26:10.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "resetearPassword.cs",
+              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\resetearPassword.cs",
+              "RelativeDocumentMoniker": "Models\\resetearPassword.cs",
+              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\resetearPassword.cs",
+              "RelativeToolTip": "Models\\resetearPassword.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T03:26:08.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PrestamoG5.cs",
+              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\PrestamoG5.cs",
+              "RelativeDocumentMoniker": "Models\\PrestamoG5.cs",
+              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\PrestamoG5.cs",
+              "RelativeToolTip": "Models\\PrestamoG5.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T03:26:01.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "Models\\LoginRequest.cs",
+              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T03:25:59.215Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LibrosController.cs",
-              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\LibrosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LibrosController.cs",
-              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\LibrosController.cs",
-              "RelativeToolTip": "Controllers\\LibrosController.cs",
-              "ViewState": "AgIAAOkAAAAAAAAAAAAiwPUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T23:12:23.117Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "LibroG5.cs",
               "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\LibroG5.cs",
               "RelativeDocumentMoniker": "Models\\LibroG5.cs",
               "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\LibroG5.cs",
               "RelativeToolTip": "Models\\LibroG5.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwC8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwCsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T21:10:38.173Z"
+              "WhenOpened": "2025-04-25T03:24:42.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LibroDTO.cs",
+              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\LibroDTO.cs",
+              "RelativeDocumentMoniker": "Models\\LibroDTO.cs",
+              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\LibroDTO.cs",
+              "RelativeToolTip": "Models\\LibroDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T03:24:35.531Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "FavoritosController.cs",
-              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\FavoritosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\FavoritosController.cs",
-              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\FavoritosController.cs",
-              "RelativeToolTip": "Controllers\\FavoritosController.cs",
+              "Title": "ListaNegraG5.cs",
+              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\ListaNegraG5.cs",
+              "RelativeDocumentMoniker": "Models\\ListaNegraG5.cs",
+              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\ListaNegraG5.cs",
+              "RelativeToolTip": "Models\\ListaNegraG5.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T05:49:27.807Z"
+              "WhenOpened": "2025-04-25T03:25:56.785Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "FavoritoG5.cs",
-              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\FavoritoG5.cs",
-              "RelativeDocumentMoniker": "Models\\FavoritoG5.cs",
-              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\FavoritoG5.cs",
-              "RelativeToolTip": "Models\\FavoritoG5.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T05:49:30.563Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ListaNegraController.cs",
-              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\ListaNegraController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ListaNegraController.cs",
-              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\ListaNegraController.cs",
-              "RelativeToolTip": "Controllers\\ListaNegraController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T23:24:49.885Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "DisponibilidadG5.cs",
               "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\DisponibilidadG5.cs",
               "RelativeDocumentMoniker": "Models\\DisponibilidadG5.cs",
               "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\DisponibilidadG5.cs",
               "RelativeToolTip": "Models\\DisponibilidadG5.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T23:05:40.483Z"
+              "WhenOpened": "2025-04-25T03:24:26.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AutorG5.cs",
+              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\AutorG5.cs",
+              "RelativeDocumentMoniker": "Models\\AutorG5.cs",
+              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Models\\AutorG5.cs",
+              "RelativeToolTip": "Models\\AutorG5.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T03:24:19.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BibliotecaContext.cs",
+              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Data\\BibliotecaContext.cs",
+              "RelativeDocumentMoniker": "Data\\BibliotecaContext.cs",
+              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Data\\BibliotecaContext.cs",
+              "RelativeToolTip": "Data\\BibliotecaContext.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAswF0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T03:23:41.994Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "CategoriasController.cs",
-              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\CategoriasController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CategoriasController.cs",
-              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\CategoriasController.cs",
-              "RelativeToolTip": "Controllers\\CategoriasController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAAAFMAAAALAAAAAAAAAA==",
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
+              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAawCgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T01:06:30.27Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AutoresController.cs",
-              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\AutoresController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AutoresController.cs",
-              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\AutoresController.cs",
-              "RelativeToolTip": "Controllers\\AutoresController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T04:07:00.954Z"
+              "WhenOpened": "2025-04-25T03:23:24.849Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "PrestamosController.cs",
+              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\PrestamosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PrestamosController.cs",
+              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\PrestamosController.cs",
+              "RelativeToolTip": "Controllers\\PrestamosController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAApwCQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T03:23:12.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ListaNegraController.cs",
+              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\ListaNegraController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ListaNegraController.cs",
+              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\ListaNegraController.cs",
+              "RelativeToolTip": "Controllers\\ListaNegraController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAIAwwCIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T03:23:00.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LibrosController.cs",
+              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\LibrosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LibrosController.cs",
+              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\LibrosController.cs",
+              "RelativeToolTip": "Controllers\\LibrosController.cs",
+              "ViewState": "AgIAAPsAAAAAAAAAAIAwwAwBAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T03:22:17.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "DisponibilidadController.cs",
               "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\DisponibilidadController.cs",
               "RelativeDocumentMoniker": "Controllers\\DisponibilidadController.cs",
               "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\DisponibilidadController.cs",
               "RelativeToolTip": "Controllers\\DisponibilidadController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAApwEwAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T23:05:37.693Z"
+              "WhenOpened": "2025-04-25T03:22:05.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CategoriasController.cs",
+              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\CategoriasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoriasController.cs",
+              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\CategoriasController.cs",
+              "RelativeToolTip": "Controllers\\CategoriasController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T03:22:01.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AutoresController.cs",
+              "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\AutoresController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AutoresController.cs",
+              "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\ApiProyectoFinalV2\\ApiProyectoFinalV2\\ApiProyectoFinal\\Controllers\\AutoresController.cs",
+              "RelativeToolTip": "Controllers\\AutoresController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T03:21:58.302Z"
             }
           ]
         }

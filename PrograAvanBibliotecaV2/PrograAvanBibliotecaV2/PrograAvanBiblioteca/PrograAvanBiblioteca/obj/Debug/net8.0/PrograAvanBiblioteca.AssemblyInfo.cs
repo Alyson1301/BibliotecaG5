@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PrograAvanBiblioteca")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7f6a815f2cc346c4c5e70dccf11c655c49bda34")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f3e2facbdc0cd8549621764e4dd951a3a7bf9be")]
 [assembly: System.Reflection.AssemblyProductAttribute("PrograAvanBiblioteca")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PrograAvanBiblioteca")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

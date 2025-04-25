@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/PrograAvanzada/BibliotecaG5/PrograAvanBibliotecaV2/PrograAvanBibliotecaV2/PrograAvanBiblioteca/PrograAvanBiblioteca/Pages/ListaNegra.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdGFOZWdyYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/PrograAvanzada/BibliotecaG5/PrograAvanBibliotecaV2/PrograAvanBibliotecaV2/PrograAvanBiblioteca/PrograAvanBiblioteca/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,6 +52,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbWVudUxpYnJvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/PrograAvanzada/BibliotecaG5/PrograAvanBibliotecaV2/PrograAvanBibliotecaV2/PrograAvanBiblioteca/PrograAvanBiblioteca/Pages/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTm90Rm91bmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/PrograAvanzada/BibliotecaG5/PrograAvanBibliotecaV2/PrograAvanBibliotecaV2/PrograAvanBiblioteca/PrograAvanBiblioteca/Pages/nuevaClave.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbnVldmFDbGF2ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -58,6 +66,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/PrograAvanzada/BibliotecaG5/PrograAvanBibliotecaV2/PrograAvanBibliotecaV2/PrograAvanBiblioteca/PrograAvanBiblioteca/Pages/Portal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9ydGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PrograAvanzada/BibliotecaG5/PrograAvanBibliotecaV2/PrograAvanBibliotecaV2/PrograAvanBiblioteca/PrograAvanBiblioteca/Pages/Prestamos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlc3RhbW9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/PrograAvanzada/BibliotecaG5/PrograAvanBibliotecaV2/PrograAvanBibliotecaV2/PrograAvanBiblioteca/PrograAvanBiblioteca/Pages/Privacy.cshtml]

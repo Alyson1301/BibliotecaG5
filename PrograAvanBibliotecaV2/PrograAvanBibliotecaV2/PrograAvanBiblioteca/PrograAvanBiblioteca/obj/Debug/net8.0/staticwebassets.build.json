@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ONKNBE/da3Z0plIyrKmVj+FdJA+Ht3cVAbS4cyNnvto=",
+  "Hash": "wGx7b16EhPTeU/b0Yp5u6OXnhiLOMfMZt1tiwDJ+skY=",
   "Source": "PrograAvanBiblioteca",
   "BasePath": "_content/PrograAvanBiblioteca",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "48pypvyjej",
-      "Integrity": "NCmczfsHAspvV66qCxiTAvdp2UU+G23ckerAPAC6PRA=",
+      "Fingerprint": "lyxi0i400d",
+      "Integrity": "k7vC+CO6npS3XZICa47WYwryuDrJCKhNIJKAeDEOjTY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\crearCuenta.css"
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "qp07fzr58g",
-      "Integrity": "ojUw5XoPWu6h/bBMN7zm/fCGc7WwwOavpGLO4ptQkOI=",
+      "Fingerprint": "bxrm7bx2fh",
+      "Integrity": "IcaWo9mo4RyVwutqgNMe6xGnVCg4jZxZyXyG1ATgNPE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Login.css"
@@ -136,32 +136,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "701sxucjie",
-      "Integrity": "F22O8FVhmlczIbzYzeUDPzjItqFPCUyrTzjdOfCr6Fc=",
+      "Fingerprint": "bh9r2o3qex",
+      "Integrity": "v7onXn+QpsopX0OzNe5y0cV5ENhUeP/afw96h0N0e/0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\menuAutores.css"
-    },
-    {
-      "Identity": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\wwwroot\\css\\menuFavoritos.css",
-      "SourceId": "PrograAvanBiblioteca",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\wwwroot\\",
-      "BasePath": "_content/PrograAvanBiblioteca",
-      "RelativePath": "css/menuFavoritos#[.{fingerprint}]?.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "dyjx89twm7",
-      "Integrity": "u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\menuFavoritos.css"
     },
     {
       "Identity": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\wwwroot\\css\\menuLibros.css",
@@ -1741,51 +1720,6 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/crearCuenta.48pypvyjej.css",
-      "AssetFile": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\wwwroot\\css\\crearCuenta.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2012"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"NCmczfsHAspvV66qCxiTAvdp2UU+G23ckerAPAC6PRA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 18:35:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "48pypvyjej"
-        },
-        {
-          "Name": "label",
-          "Value": "css/crearCuenta.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-NCmczfsHAspvV66qCxiTAvdp2UU+G23ckerAPAC6PRA="
-        }
-      ]
-    },
-    {
       "Route": "css/crearCuenta.css",
       "AssetFile": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\wwwroot\\css\\crearCuenta.css",
       "Selectors": [],
@@ -1796,7 +1730,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2012"
+          "Value": "1980"
         },
         {
           "Name": "Content-Type",
@@ -1804,11 +1738,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"NCmczfsHAspvV66qCxiTAvdp2UU+G23ckerAPAC6PRA=\""
+          "Value": "\"k7vC+CO6npS3XZICa47WYwryuDrJCKhNIJKAeDEOjTY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 18:35:01 GMT"
+          "Value": "Fri, 25 Apr 2025 03:16:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1818,7 +1752,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-NCmczfsHAspvV66qCxiTAvdp2UU+G23ckerAPAC6PRA="
+          "Value": "sha256-k7vC+CO6npS3XZICa47WYwryuDrJCKhNIJKAeDEOjTY="
+        }
+      ]
+    },
+    {
+      "Route": "css/crearCuenta.lyxi0i400d.css",
+      "AssetFile": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\wwwroot\\css\\crearCuenta.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1980"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k7vC+CO6npS3XZICa47WYwryuDrJCKhNIJKAeDEOjTY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 03:16:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lyxi0i400d"
+        },
+        {
+          "Name": "label",
+          "Value": "css/crearCuenta.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-k7vC+CO6npS3XZICa47WYwryuDrJCKhNIJKAeDEOjTY="
         }
       ]
     },
@@ -1905,6 +1884,51 @@
       ]
     },
     {
+      "Route": "css/Login.bxrm7bx2fh.css",
+      "AssetFile": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\wwwroot\\css\\Login.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2200"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IcaWo9mo4RyVwutqgNMe6xGnVCg4jZxZyXyG1ATgNPE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 03:18:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bxrm7bx2fh"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Login.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IcaWo9mo4RyVwutqgNMe6xGnVCg4jZxZyXyG1ATgNPE="
+        }
+      ]
+    },
+    {
       "Route": "css/Login.css",
       "AssetFile": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\wwwroot\\css\\Login.css",
       "Selectors": [],
@@ -1915,7 +1939,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2359"
+          "Value": "2200"
         },
         {
           "Name": "Content-Type",
@@ -1923,11 +1947,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ojUw5XoPWu6h/bBMN7zm/fCGc7WwwOavpGLO4ptQkOI=\""
+          "Value": "\"IcaWo9mo4RyVwutqgNMe6xGnVCg4jZxZyXyG1ATgNPE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 18:35:02 GMT"
+          "Value": "Fri, 25 Apr 2025 03:18:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1937,57 +1961,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ojUw5XoPWu6h/bBMN7zm/fCGc7WwwOavpGLO4ptQkOI="
+          "Value": "sha256-IcaWo9mo4RyVwutqgNMe6xGnVCg4jZxZyXyG1ATgNPE="
         }
       ]
     },
     {
-      "Route": "css/Login.qp07fzr58g.css",
-      "AssetFile": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\wwwroot\\css\\Login.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2359"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ojUw5XoPWu6h/bBMN7zm/fCGc7WwwOavpGLO4ptQkOI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 18:35:02 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qp07fzr58g"
-        },
-        {
-          "Name": "label",
-          "Value": "css/Login.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ojUw5XoPWu6h/bBMN7zm/fCGc7WwwOavpGLO4ptQkOI="
-        }
-      ]
-    },
-    {
-      "Route": "css/menuAutores.701sxucjie.css",
+      "Route": "css/menuAutores.bh9r2o3qex.css",
       "AssetFile": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\wwwroot\\css\\menuAutores.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1997,7 +1976,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2548"
+          "Value": "2388"
         },
         {
           "Name": "Content-Type",
@@ -2005,11 +1984,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"F22O8FVhmlczIbzYzeUDPzjItqFPCUyrTzjdOfCr6Fc=\""
+          "Value": "\"v7onXn+QpsopX0OzNe5y0cV5ENhUeP/afw96h0N0e/0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 18:35:02 GMT"
+          "Value": "Fri, 25 Apr 2025 03:18:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2019,7 +1998,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "701sxucjie"
+          "Value": "bh9r2o3qex"
         },
         {
           "Name": "label",
@@ -2027,7 +2006,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-F22O8FVhmlczIbzYzeUDPzjItqFPCUyrTzjdOfCr6Fc="
+          "Value": "sha256-v7onXn+QpsopX0OzNe5y0cV5ENhUeP/afw96h0N0e/0="
         }
       ]
     },
@@ -2042,7 +2021,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2548"
+          "Value": "2388"
         },
         {
           "Name": "Content-Type",
@@ -2050,11 +2029,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"F22O8FVhmlczIbzYzeUDPzjItqFPCUyrTzjdOfCr6Fc=\""
+          "Value": "\"v7onXn+QpsopX0OzNe5y0cV5ENhUeP/afw96h0N0e/0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 18:35:02 GMT"
+          "Value": "Fri, 25 Apr 2025 03:18:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2064,89 +2043,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-F22O8FVhmlczIbzYzeUDPzjItqFPCUyrTzjdOfCr6Fc="
-        }
-      ]
-    },
-    {
-      "Route": "css/menuFavoritos.css",
-      "AssetFile": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\wwwroot\\css\\menuFavoritos.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "14"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 18:35:02 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk="
-        }
-      ]
-    },
-    {
-      "Route": "css/menuFavoritos.dyjx89twm7.css",
-      "AssetFile": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\wwwroot\\css\\menuFavoritos.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "14"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 24 Apr 2025 18:35:02 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "dyjx89twm7"
-        },
-        {
-          "Name": "label",
-          "Value": "css/menuFavoritos.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-u4DszuiY1WLPnENub5+KbAlwyJCcCHdKlyaXaKLaRqk="
+          "Value": "sha256-v7onXn+QpsopX0OzNe5y0cV5ENhUeP/afw96h0N0e/0="
         }
       ]
     },

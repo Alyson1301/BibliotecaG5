@@ -25,10 +25,6 @@
       "PackagePath": "staticwebassets\\css\\menuAutores.css"
     },
     {
-      "Id": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\wwwroot\\css\\menuFavoritos.css",
-      "PackagePath": "staticwebassets\\css\\menuFavoritos.css"
-    },
-    {
       "Id": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\wwwroot\\css\\menuLibros.css",
       "PackagePath": "staticwebassets\\css\\menuLibros.css"
     },
