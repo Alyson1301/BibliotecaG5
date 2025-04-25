@@ -28,7 +28,7 @@ namespace ApiProyectoFinal.Controllers
                 .Include(l => l.Categoria)
                 .ToListAsync();
 
-            // Obtener disponibilidad para cada libro
+           
             foreach (var libro in libros)
             {
                 var disponibilidad = await _context.FIDE_DISPONIBILIDADG5
@@ -56,7 +56,7 @@ namespace ApiProyectoFinal.Controllers
                 return NotFound();
             }
 
-            // Obtener disponibilidad
+            
             var disponibilidad = await _context.FIDE_DISPONIBILIDADG5
                 .Where(d => d.ID_Libro == libro.ID_Libro)
                 .OrderByDescending(d => d.ID_Disponibilidad)
@@ -71,14 +71,14 @@ namespace ApiProyectoFinal.Controllers
         [HttpPost]
         public async Task<ActionResult<LibroG5>> PostLibro([FromBody] LibroInsertDTO libroDTO)
         {
-            // Verificar que el autor existe
+            
             var autor = await _context.FIDE_AUTORESG5.FindAsync(libroDTO.ID_Autor);
             if (autor == null)
             {
                 return BadRequest("El autor especificado no existe");
             }
 
-            // Verificar que la categoría existe (si se proporciona)
+           
             if (libroDTO.ID_Categoria.HasValue)
             {
                 var categoria = await _context.FIDE_CATEGORIASG5.FindAsync(libroDTO.ID_Categoria.Value);
@@ -100,7 +100,7 @@ namespace ApiProyectoFinal.Controllers
             _context.FIDE_LIBROSG5.Add(libro);
             await _context.SaveChangesAsync();
 
-            // Crear registro de disponibilidad
+            
             var disponibilidad = new DisponibilidadG5
             {
                 ID_Libro = libro.ID_Libro,
@@ -122,14 +122,14 @@ namespace ApiProyectoFinal.Controllers
                 return BadRequest("El ID del libro no coincide.");
             }
 
-            // Verificar que el autor existe
+      
             var autor = await _context.FIDE_AUTORESG5.FindAsync(libroDTO.ID_Autor);
             if (autor == null)
             {
                 return BadRequest("El autor especificado no existe");
             }
 
-            // Verificar que la categoría existe (si se proporciona)
+            
             if (libroDTO.ID_Categoria.HasValue)
             {
                 var categoria = await _context.FIDE_CATEGORIASG5.FindAsync(libroDTO.ID_Categoria.Value);
@@ -139,21 +139,21 @@ namespace ApiProyectoFinal.Controllers
                 }
             }
 
-            // Obtener el libro existente sin cargar las propiedades de navegación
+            
             var libroExistente = await _context.FIDE_LIBROSG5.FindAsync(id);
             if (libroExistente == null)
             {
                 return NotFound();
             }
 
-            // Actualizar propiedades directamente en la entidad existente
+            
             libroExistente.Titulo = libroDTO.Titulo;
             libroExistente.ID_Autor = libroDTO.ID_Autor;
             libroExistente.ID_Categoria = libroDTO.ID_Categoria;
             libroExistente.ISBN = libroDTO.ISBN;
             libroExistente.Año_Publicación = libroDTO.Año_Publicación;
 
-            // No modificamos las propiedades de navegación
+            
             _context.Entry(libroExistente).Property(x => x.Titulo).IsModified = true;
             _context.Entry(libroExistente).Property(x => x.ID_Autor).IsModified = true;
             _context.Entry(libroExistente).Property(x => x.ID_Categoria).IsModified = true;
@@ -164,7 +164,7 @@ namespace ApiProyectoFinal.Controllers
             {
                 await _context.SaveChangesAsync();
 
-                // Actualizar disponibilidad si ha cambiado
+                
                 var ultimaDisponibilidad = await _context.FIDE_DISPONIBILIDADG5
                     .Where(d => d.ID_Libro == id)
                     .OrderByDescending(d => d.ID_Disponibilidad)
@@ -207,7 +207,7 @@ namespace ApiProyectoFinal.Controllers
                 return NotFound();
             }
 
-            // Eliminar registros de disponibilidad relacionados
+         
             var disponibilidades = await _context.FIDE_DISPONIBILIDADG5
                 .Where(d => d.ID_Libro == id)
                 .ToListAsync();
@@ -234,7 +234,7 @@ namespace ApiProyectoFinal.Controllers
                 .Where(l => l.Titulo.Contains(q))
                 .ToListAsync();
 
-            // Obtener disponibilidad para cada libro
+           
             foreach (var libro in libros)
             {
                 var disponibilidad = await _context.FIDE_DISPONIBILIDADG5
@@ -258,7 +258,7 @@ namespace ApiProyectoFinal.Controllers
                 .Where(l => l.ID_Categoria == id)
                 .ToListAsync();
 
-            // Obtener disponibilidad para cada libro
+            
             foreach (var libro in libros)
             {
                 var disponibilidad = await _context.FIDE_DISPONIBILIDADG5

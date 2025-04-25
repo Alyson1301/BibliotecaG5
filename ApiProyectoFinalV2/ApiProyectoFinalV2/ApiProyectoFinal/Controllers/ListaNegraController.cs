@@ -23,7 +23,7 @@ namespace ApiProyectoFinal.Controllers
         public async Task<ActionResult<IEnumerable<ListaNegraG5>>> GetListaNegra()
         {
             return await _context.FIDE_LISTA_NEGRAG5
-                .Include(ln => ln.Usuario) // Incluir datos del usuario
+                .Include(ln => ln.Usuario) 
                 .ToListAsync();
         }
 
@@ -32,7 +32,7 @@ namespace ApiProyectoFinal.Controllers
         public async Task<ActionResult<ListaNegraG5>> GetListaNegra(int id)
         {
             var listaNegra = await _context.FIDE_LISTA_NEGRAG5
-                .Include(ln => ln.Usuario) // Incluir datos del usuario
+                .Include(ln => ln.Usuario) 
                 .FirstOrDefaultAsync(ln => ln.ID_Lista_Negra == id);
 
             if (listaNegra == null)

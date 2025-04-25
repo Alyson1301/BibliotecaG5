@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DA32E157-EF8F-490B-BA69-06F05B2CB568}|PrograAvanBiblioteca\\PrograAvanBiblioteca.csproj|d:\\prograavanzada\\bibliotecag5\\prograavanbibliotecav2\\prograavanbibliotecav2\\prograavanbiblioteca\\prograavanbiblioteca\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DA32E157-EF8F-490B-BA69-06F05B2CB568}|PrograAvanBiblioteca\\PrograAvanBiblioteca.csproj|solutionrelative:prograavanbiblioteca\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DA32E157-EF8F-490B-BA69-06F05B2CB568}|PrograAvanBiblioteca\\PrograAvanBiblioteca.csproj|d:\\prograavanzada\\bibliotecag5\\prograavanbibliotecav2\\prograavanbibliotecav2\\prograavanbiblioteca\\prograavanbiblioteca\\pages\\menulibros.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DA32E157-EF8F-490B-BA69-06F05B2CB568}|PrograAvanBiblioteca\\PrograAvanBiblioteca.csproj|solutionrelative:prograavanbiblioteca\\pages\\menulibros.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DA32E157-EF8F-490B-BA69-06F05B2CB568}|PrograAvanBiblioteca\\PrograAvanBiblioteca.csproj|d:\\prograavanzada\\bibliotecag5\\prograavanbibliotecav2\\prograavanbibliotecav2\\prograavanbiblioteca\\prograavanbiblioteca\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DA32E157-EF8F-490B-BA69-06F05B2CB568}|PrograAvanBiblioteca\\PrograAvanBiblioteca.csproj|solutionrelative:prograavanbiblioteca\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA32E157-EF8F-490B-BA69-06F05B2CB568}|PrograAvanBiblioteca\\PrograAvanBiblioteca.csproj|d:\\prograavanzada\\bibliotecag5\\prograavanbibliotecav2\\prograavanbibliotecav2\\prograavanbiblioteca\\prograavanbiblioteca\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DA32E157-EF8F-490B-BA69-06F05B2CB568}|PrograAvanBiblioteca\\PrograAvanBiblioteca.csproj|solutionrelative:prograavanbiblioteca\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA32E157-EF8F-490B-BA69-06F05B2CB568}|PrograAvanBiblioteca\\PrograAvanBiblioteca.csproj|d:\\prograavanzada\\bibliotecag5\\prograavanbibliotecav2\\prograavanbibliotecav2\\prograavanbiblioteca\\prograavanbiblioteca\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\Pages\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "PrograAvanBiblioteca\\Pages\\Shared\\_Layout.cshtml",
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\Pages\\Index.cshtml",
               "RelativeDocumentMoniker": "PrograAvanBiblioteca\\Pages\\Index.cshtml",
@@ -90,15 +90,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\Pages\\Login.cshtml",
               "RelativeDocumentMoniker": "PrograAvanBiblioteca\\Pages\\Login.cshtml",
               "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\Pages\\Login.cshtml",
               "RelativeToolTip": "PrograAvanBiblioteca\\Pages\\Login.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAA0AAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-24T23:46:53.464Z"
+              "WhenOpened": "2025-04-24T23:46:53.464Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -114,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "menuAutores.cshtml",
               "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\Pages\\menuAutores.cshtml",
               "RelativeDocumentMoniker": "PrograAvanBiblioteca\\Pages\\menuAutores.cshtml",
@@ -126,13 +127,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "menuLibros.cshtml",
               "DocumentMoniker": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\Pages\\menuLibros.cshtml",
               "RelativeDocumentMoniker": "PrograAvanBiblioteca\\Pages\\menuLibros.cshtml",
               "ToolTip": "D:\\PrograAvanzada\\BibliotecaG5\\PrograAvanBibliotecaV2\\PrograAvanBibliotecaV2\\PrograAvanBiblioteca\\PrograAvanBiblioteca\\Pages\\menuLibros.cshtml",
               "RelativeToolTip": "PrograAvanBiblioteca\\Pages\\menuLibros.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-24T21:23:46.638Z",
               "EditorCaption": ""
