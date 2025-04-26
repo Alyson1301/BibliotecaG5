@@ -3,7 +3,7 @@
 <p align="center">
   <img src="PrograAvanBibliotecaV2/PrograAvanBibliotecaV2/PrograAvanBiblioteca/PrograAvanBiblioteca/wwwroot/images/lotto.png" alt="Flor de Loto" width="100" height="100">
 </p>
-> *"Un libro es un sueño que tienes en tus manos." – Neil Gaiman*
+
 
 ---
 
